@@ -80,7 +80,7 @@ function ShareResults({ type, result }) {
   const copyToClipboard = () => {
     let text;
     if (type === "ai") {
-      text = `AI Body Analysis Result: ${result.category} (${result.confidence}% confidence)\n\nFor entertainment purposes only.`;
+      text = `AI Body Analysis Result: ${result.category} (${result.bmi} BMI )\n\nFor entertainment purposes only.`;
     } else {
       text = `My BMI: ${result.bmi} (${result.category})\n\nCalculated using WHO standards.`;
     }
