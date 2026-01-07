@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Upload, Image as ImageIcon } from "lucide-react";
 import "../styles/MultiImageAnalysis.css";
 
-const API_URL = "https://huggingface.co/spaces/nithin521/visual-bmi-backend/predict-image"; // update if deployed
+const API_URL = "https://nithin521-visual-bmi-backend.hf.space/predict-image"; // update if deployed
 
 function getBMICategory(bmi) {
   if (bmi < 18.5) return "Underweight";
@@ -162,4 +162,5 @@ function MultiImageAnalysis() {
 }
 
 export default MultiImageAnalysis;
+
 
