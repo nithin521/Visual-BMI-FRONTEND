@@ -34,7 +34,7 @@ function ImageAnalysis({ onResult }) {
       const blob = await response.blob();
       formData.append("image", blob);
 
-      const res = await fetch("https://huggingface.co/spaces/nithin521/visual-bmi-backend/predict-image", {
+      const res = await fetch("https://nithin521-visual-bmi-backend.hf.space/predict-image", {
         method: "POST",
         body: formData,
       });
