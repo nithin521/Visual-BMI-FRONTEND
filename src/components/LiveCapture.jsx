@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { Camera, RefreshCcw } from "lucide-react";
 import "../styles/LiveCameraBMI.css";
 
-const API_URL = "https://huggingface.co/spaces/nithin521/visual-bmi-backend/predict-image";
+const API_URL = "https://nithin521-visual-bmi-backend.hf.space/predict-image";
 
 function getBMICategory(bmi) {
   if (bmi < 18.5) return "Underweight";
@@ -135,4 +135,5 @@ export default function LiveCameraBMI() {
     </div>
   );
 }
+
 
