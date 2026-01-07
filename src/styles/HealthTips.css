@@ -1,0 +1,187 @@
+.health-tips {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.tips-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, #ec4899, #ef4444);
+  color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.tips-header svg {
+  flex-shrink: 0;
+}
+
+.tips-header h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.tips-header p {
+  margin: 0;
+  opacity: 0.95;
+  font-size: 1rem;
+}
+
+.disclaimer-small {
+  background-color: #fef3c7;
+  border: 1px solid #fbbf24;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #92400e;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+body.dark .disclaimer-small {
+  background-color: #78350f;
+  border-color: #92400e;
+  color: #fef3c7;
+}
+
+.tips-grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tip-card {
+  background-color: var(--bg-primary);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.tip-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.tip-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tip-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent-color), #2563eb);
+  color: white;
+  flex-shrink: 0;
+}
+
+.tip-header h3 {
+  flex: 1;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.expand-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.expand-btn:hover {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.tip-list {
+  list-style: none;
+  padding: 0 1.5rem 1.5rem;
+  animation: slideDown 0.3s ease-out;
+}
+
+.tip-list li {
+  padding: 0.875rem 0;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.tip-list li:last-child {
+  border-bottom: none;
+}
+
+.tip-list li::before {
+  content: "→";
+  color: var(--accent-color);
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+.general-tip {
+  background: linear-gradient(135deg, var(--accent-color), #2563eb);
+  color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.general-tip p {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.general-tip strong {
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .tips-header {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .tips-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .tip-header {
+    padding: 1rem;
+  }
+
+  .tip-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tip-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .tip-list {
+    padding: 0 1rem 1rem;
+  }
+
+  .general-tip {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,219 @@
+.educational-info {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-card {
+  background-color: var(--bg-primary);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent-color), #2563eb);
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.info-card h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.info-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.info-card p:last-child {
+  margin-bottom: 0;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.info-card li {
+  padding: 0.875rem 0;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.info-card li:last-child {
+  border-bottom: none;
+}
+
+.info-card li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.formula-box {
+  background-color: var(--bg-secondary);
+  border-left: 4px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin: 1rem 0;
+}
+
+.formula-box p {
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.formula-box code {
+  display: block;
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.example {
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 1rem;
+  font-style: italic;
+}
+
+.bmi-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.bmi-table th,
+.bmi-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.bmi-table th {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+.bmi-table tbody tr {
+  transition: all 0.2s;
+}
+
+.bmi-table tbody tr:hover {
+  background-color: var(--bg-secondary);
+}
+
+.underweight-row {
+  border-left: 4px solid #3b82f6;
+}
+
+.normal-row {
+  border-left: 4px solid #10b981;
+}
+
+.overweight-row {
+  border-left: 4px solid #f59e0b;
+}
+
+.obese-row {
+  border-left: 4px solid #ef4444;
+}
+
+.warning-card {
+  border: 2px solid var(--warning-color);
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.05), rgba(251, 191, 36, 0.02));
+}
+
+body.dark .warning-card {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(251, 191, 36, 0.05));
+}
+
+.warning-card .info-icon {
+  background: linear-gradient(135deg, var(--warning-color), #f59e0b);
+}
+
+.highlight-card {
+  border: 2px solid var(--accent-color);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(59, 130, 246, 0.02));
+}
+
+body.dark .highlight-card {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.05));
+}
+
+.indicators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.indicator {
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.indicator strong {
+  display: block;
+  color: var(--accent-color);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.indicator p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .info-card {
+    padding: 1.5rem;
+  }
+
+  .info-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .info-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .bmi-table th,
+  .bmi-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .indicators-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .formula-box code {
+    font-size: 0.95rem;
+  }
+}

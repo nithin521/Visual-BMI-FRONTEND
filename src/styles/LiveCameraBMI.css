@@ -1,0 +1,80 @@
+.camera-container {
+  max-width: 420px;
+  margin: auto;
+  text-align: center;
+}
+.camera-container h1 {
+  font-size: xx-large !important;
+}
+.camera-box {
+  width: 100%;
+  height: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+  margin: 16px 0;
+}
+
+.camera-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.camera-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.camera-actions button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #626060;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+.camera-actions button:first-child {
+  display: flex;
+  justify-content: space-around;
+}
+
+.result-card {
+  margin-top: 20px;
+}
+
+.bmi-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #4f46e5;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.zoom-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+  color: black;
+}
+
+.zoom-controls button {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 2px solid #626060;
+  background: #f9fafb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.zoom-controls button:hover {
+  background: #eef2ff;
+}
