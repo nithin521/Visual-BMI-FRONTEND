@@ -118,7 +118,7 @@
 import { useState, useEffect } from "react";
 import { AuthProvider, useAuth } from "./contexts/AuthContext";
 import Login from "./components/Login";
-import Signup from "./components/Signup";
+import Signup from "./components/SignUp";
 import UserProfile from "./components/UserProfile";
 import ImageAnalysis from "./components/ImageAnalysis";
 import BMICalculator from "./components/BMICalculator";
