@@ -1,0 +1,124 @@
+.multi-image-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.multi-image-card {
+  width: 100%;
+  max-width: 520px;
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+}
+
+/* Upload box */
+.upload-box {
+  border: 2px dashed #3b82f6;
+  border-radius: 16px;
+  padding: 28px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  color: var(--text-primary);
+}
+
+.upload-box:hover {
+  background: var(--bg-preview);
+}
+
+/* Preview container */
+.image-preview-fixed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.preview-slot {
+  height: 110px;
+  border-radius: 14px;
+  background: var(--bg-preview);
+  border: 1.5px dashed var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.preview-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.empty-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 12px;
+  gap: 4px;
+}
+
+/* Button */
+.analyze-btn {
+  margin-top: 24px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.analyze-btn:disabled {
+  background: #6b7280;
+}
+
+/* Result */
+.result-card {
+  margin-top: 28px;
+  padding: 24px;
+  border-radius: 18px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border-color);
+}
+
+.bmi-circle {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bmi-category {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.sample-info {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
