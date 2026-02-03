@@ -3,7 +3,7 @@ import { Upload, Image as ImageIcon } from "lucide-react";
 import "../styles/MultiImageAnalysis.css";
 import { useAuth } from "../contexts/AuthContext";
 
-const API_URL = "http://localhost:5000/predict-image"; // update if deployed
+const API_URL = "https://nithin521-visual-bmi-backend.hf.space/predict-image"; // update if deployed
 
 function getBMICategory(bmi) {
   if (bmi < 18.5) return "Underweight";
@@ -165,3 +165,4 @@ function MultiImageAnalysis() {
 }
 
 export default MultiImageAnalysis;
+
